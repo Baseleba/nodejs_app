@@ -9,7 +9,7 @@ pipeline{
                 sh 'npm install'
             }
         }
-        stages ('package'){
+        stage ('package'){
             steps{
                 sh 'npm pack'
             }
